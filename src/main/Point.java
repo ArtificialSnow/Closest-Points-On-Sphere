@@ -20,7 +20,7 @@ import conversions.Constants;
  *     If the difference in depth between (a,b) < difference in depth between (a,c)
  *     Then the distance between (a,b) < distance between (a,c)
  */
-class Point {
+public class Point {
     String name;
     double latitude;
     double longitude;
