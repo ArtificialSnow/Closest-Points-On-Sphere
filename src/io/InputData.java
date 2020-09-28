@@ -7,9 +7,9 @@ import main.Point;
  */
 public class InputData {
 
-    int numPoints;
-    Point[] pointsByLongitude;
-    Point[] pointsByLongitudeCopy;
+    private int numPoints;
+    private Point[] pointsByLongitude;
+    private Point[] pointsByLongitudeCopy;
 
     public InputData(int numPoints, Point[] pointsByLongitude, Point[] pointsByLongitudeCopy) {
         this.numPoints = numPoints;
