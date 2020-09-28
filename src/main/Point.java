@@ -21,10 +21,10 @@ import conversions.Constants;
  *     Then the distance between (a,b) < distance between (a,c)
  */
 public class Point {
-    String name;
-    double latitude;
-    double longitude;
-    double depth;
+    private String name;
+    private double latitude;
+    private double longitude;
+    private double depth;
 
     public Point(String name, double latitudeInDegrees, double longitudeInDegrees){
         this.name = name;
@@ -33,5 +33,21 @@ public class Point {
         this.depth = Math.cos(AngleMapper.degreesToRadians(latitudeInDegrees))
                 * Math.cos(AngleMapper.degreesToRadians(longitudeInDegrees))
                 * Constants.radiusOfEarth;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public double getDepth() {
+        return depth;
     }
 }
