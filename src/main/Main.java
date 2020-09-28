@@ -14,7 +14,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         InputParser parser = new InputParser(reader);
-        ClosestPoints algorithm = new ClosestPoints();
         OutputWriter writer = new OutputWriter();
 
         int iteration = 1;
@@ -25,12 +24,11 @@ public class Main {
             }
 
             InputData inputData = parser.readInput(numPoints);
-            Point[] pointsByLatitude = inputData.getPointsByLatitude();
-            Point[] pointsByDepth = inputData.getPointsByLatitudeCopy();
             int startingIndex = 0;
             int endingIndex = numPoints-1;
 
-            OutputData outputData = algorithm.findClosestPoints(pointsByLatitude, pointsByDepth, startingIndex, endingIndex);
+            ClosestPoints algorithm = new ClosestPoints();
+            OutputData outputData = algorithm.findClosestPoints(inputData);
             writer.writeOutput(iteration, outputData);
 
             iteration++;
