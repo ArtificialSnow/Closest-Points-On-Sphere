@@ -9,6 +9,13 @@ import java.util.StringTokenizer;
 
 /**
  * Reads input from standard in and returns an InputData object.
+ *
+ * Input is in the format:
+ * numberOfPoints
+ * pointName pointLatitude pointLongitude
+ * pointName pointLatitude pointLongitude
+ * pointName pointLatitude pointLongitude
+ * ...
  */
 public class InputParser {
     BufferedReader reader;
