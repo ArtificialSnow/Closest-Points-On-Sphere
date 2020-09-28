@@ -9,14 +9,14 @@ This algorithm uses a 'divide and conquer' approach and the necessary implementa
 
 This algorithm takes input through standard in, in the following form: 
 
-<numPoints>
-<pointName> <pointLatitude> <pointLongitude>
-<pointName> <pointLatitude> <pointLongitude>
-<pointName> <pointLatitude> <pointLongitude>
+numPoints
+pointName pointLatitude pointLongitude
+pointName pointLatitude pointLongitude
+pointName pointLatitude pointLongitude
 ...
-<numPoints>
-<pointName> <pointLatitude> <pointLongitude>
-<pointName> <pointLatitude> <pointLongitude>
-<pointName> <pointLatitude> <pointLongitude>
+numPoints
+pointName pointLatitude pointLongitude
+pointName pointLatitude pointLongitude
+pointName pointLatitude pointLongitude
 ...
 
