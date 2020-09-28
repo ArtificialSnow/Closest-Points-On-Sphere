@@ -8,25 +8,24 @@ import main.Point;
 public class InputData {
 
     private int numPoints;
-    private Point[] pointsByLongitude;
-    private Point[] pointsByLongitudeCopy;
+    private Point[] pointsByLatitude;
+    private Point[] pointsByLatitudeCopy;
 
-    public InputData(int numPoints, Point[] pointsByLongitude, Point[] pointsByLongitudeCopy) {
+    public InputData(int numPoints, Point[] pointsByLatitude, Point[] pointsByLatitudeCopy) {
         this.numPoints = numPoints;
-        this.pointsByLongitude = pointsByLongitude;
-        this.pointsByLongitudeCopy = pointsByLongitudeCopy;
+        this.pointsByLatitude = pointsByLatitude;
+        this.pointsByLatitudeCopy = pointsByLatitudeCopy;
     }
-
 
     public int getNumPoints() {
         return numPoints;
     }
 
-    public Point[] getPointsByLongitude() {
-        return pointsByLongitude;
+    public Point[] getPointsByLatitude() {
+        return pointsByLatitude;
     }
 
-    public Point[] getPointsByLongitudeCopy() {
-        return pointsByLongitudeCopy;
+    public Point[] getPointsByLatitudeCopy() {
+        return pointsByLatitudeCopy;
     }
 }
