@@ -24,8 +24,6 @@ public class Main {
             }
 
             InputData inputData = parser.readInput(numPoints);
-            int startingIndex = 0;
-            int endingIndex = numPoints-1;
 
             ClosestPoints algorithm = new ClosestPoints();
             OutputData outputData = algorithm.findClosestPoints(inputData);

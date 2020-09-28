@@ -2,6 +2,8 @@ package conversions;
 
 import main.Point;
 
+import static conversions.AngleMapper.degreesToRadians;
+
 public class Distance {
 
     /**
@@ -9,10 +11,10 @@ public class Distance {
      * The great circle distance between two points is the distance along the surface of the sphere.
      */
     public static double greatCircleDistance(Point a, Point b) {
-        double aPhi = AngleMapper.degreesToRadians(a.getLatitude());
-        double bPhi = AngleMapper.degreesToRadians(b.getLatitude());
-        double deltaPhi = AngleMapper.degreesToRadians(b.getLatitude() - a.getLatitude());
-        double deltaLambda = AngleMapper.degreesToRadians(b.getLongitude() - a.getLongitude());
+        double aPhi = degreesToRadians(a.getLatitude());
+        double bPhi = degreesToRadians(b.getLatitude());
+        double deltaPhi = degreesToRadians(b.getLatitude() - a.getLatitude());
+        double deltaLambda = degreesToRadians(b.getLongitude() - a.getLongitude());
 
         double component1 = Math.sin(deltaPhi/2.0);
         double component2 = Math.sin(deltaLambda/2.0);

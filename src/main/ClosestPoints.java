@@ -44,7 +44,7 @@ public class ClosestPoints {
         Point midLine = pointsByLatitude[midIndex];
         recursiveFindClosestPoints(pointsByLatitude, pointsByDepth, helper, startIndex, midIndex);
         recursiveFindClosestPoints(pointsByLatitude, pointsByDepth, helper, midIndex+1, endIndex);
-        mergeByDepth(pointsByDepth, helper,startIndex, midIndex, endIndex);
+        mergeByDepth(pointsByDepth, helper, startIndex, midIndex, endIndex);
 
         //If points vertical distance is within shortestDistance of the midLine, it may be closer to another point
         //that is on the other side of the midLine.
@@ -58,7 +58,7 @@ public class ClosestPoints {
         //Compute whether points within the strip are closer than the shortestDistance.
         //The exit condition ensures that this algorithm runs in O(nlogn)
         for(int i = 0; i < count; i++){
-            for(int j = i+1; (j < count) && (Math.abs(helper[i].getDepth() - helper[j].getDepth()) * Constants.radiusOfEarth) < shortestDistance; j++) {
+            for(int j = i+1; (j < count) && Math.abs(helper[i].getDepth() - helper[j].getDepth()) < shortestDistance; j++) {
                 double distance = Distance.greatCircleDistance(helper[i], helper[j]);
                 if (distance < shortestDistance){
                     closestPointA = helper[i];
