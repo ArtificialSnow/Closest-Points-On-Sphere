@@ -70,9 +70,9 @@ public class ClosestPoints {
     }
 
     /**
-     * Let a conceptual list be a set of elements within an array.
-     * Runs merge on the two conceptual lists in pointsByDepth: [start, mid] and [mid+1, end]
-     * To create one conceptual list between [start, end] that is sorted by depth.
+     * Let a conceptual array be a set of consecutive elements within an array.
+     * Runs merge on the two conceptual arrays in pointsByDepth: [start, mid] and [mid+1, end]
+     * To create one conceptual array between [start, end] that is sorted by depth.
      */
     private static void mergeByDepth(Point[] pointsByDepth, Point[] helper, int start, int mid, int end) {
         for(int i = start; i <= end; i++){
