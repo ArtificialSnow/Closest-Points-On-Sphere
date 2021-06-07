@@ -8,4 +8,5 @@ This algorithm uses a 'divide and conquer' approach and the necessary implementa
 
 
 Input format:
-![image](https://user-images.githubusercontent.com/12625705/121004080-59ea5d80-c7e2-11eb-988f-f0485e0d7ec4.png)
+![Screenshot 2021-06-07 222955](https://user-images.githubusercontent.com/12625705/121004173-78505900-c7e2-11eb-9b58-287e72ed232d.png)
+
